@@ -62,7 +62,7 @@ https://www.geogebra.org/m/xhp3sqnt
 The goal of this project is to provide junior officers at III Corps with tools that can support situational awareness in the field and tools to assist in predicting logistic needs. This study demonstrates how two different datasets can be transformed through preprocessing, explanatory data analysis, visualization, and predictive modeling to prepare officers for missions. The first analysis develops a Random Forest classifier that distinguishes armored from non-armored vehicles using color based image features. The Shiny web application demonstrates how machine learning can assist in asset detection through the use of image classification, visualization of the model training, and a short (user appropriate) description of gradient descent. The second analysis builds a multivariate linear regression model to predict fuel consumption based on vehicle weight, speed, and distance traveled. The project includes both a Shiny web application and Python code that accepts user input to predict fuel consumption. These models illustrate how automated decision systems could work together to support III Corps.
 
 ## Links for the Data Analysis and Visualization Models
-https://erin-plaster.shinyapps.io/Classification_Model/
+https://erin-plaster.shinyapps.io/Classification_Model/  
 https://erin-plaster.shinyapps.io/Regression_App/
 
 
