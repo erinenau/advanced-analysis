@@ -7,28 +7,28 @@ Erin Plaster
 
 ```
 advanced-analysis/
-├── README.md
-├── data/
+├── README.md                          # Project overview and navigation guide
+├── data/                              # Datasets used in analysis
 │   └── synthetic-data.csv
-├── images/
-├── notebooks/
+├── images/                            # Project visualizations and figures
+├── notebooks/                         # Jupyter notebooks for analysis
 │   └── placeholder.ipynb
-├── project7/
+├── project7/                          # Mathematical modeling project (Riemann sums)
 │   ├── convoy_data_clean.csv
-│   ├── project7_python.ipynb
-│   └── README.md
-├── reports/
-├── rstudio/
-│   ├── Classification_Model/
-│   │   ├── app.R
-│   │   └── www/
-│   │       ├── armored/
+│   ├── project7_python.ipynb         # Python implementation and analysis
+│   └── README.md                     # Project-specific documentation
+├── reports/                           # Generated analysis reports
+├── rstudio/                           # R Shiny applications
+│   ├── Classification_Model/          # Image classification (armored vs non-armored)
+│   │   ├── app.R                     # Shiny app for vehicle classification
+│   │   └── www/                      # Web assets
+│   │       ├── armored/              # Sample armored vehicle images
 │   │       │   ├── arm1.avif
 │   │       │   └── arm11.avif
-│   │       └── nonarmored/
-│   └── Regression_App/
-│       ├── app.R
-│       └── convoy_data_clean.csv
+│   │       └── nonarmored/           # Sample non-armored vehicle images
+│   └── Regression_App/                # Fuel consumption prediction model
+│       ├── app.R                     # Shiny app for regression predictions
+│       └── convoy_data_clean.csv     # Vehicle and fuel data
 ```
 
 ---
