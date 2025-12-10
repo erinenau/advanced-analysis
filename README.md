@@ -2,6 +2,8 @@
 Erin Plaster
 12-07-2025
 
+## Introduction
+My name is Erin Plaster, and I am currently an undergraduate mathematics student at Texas A&M University - Central Texas. My main interests lie in mathematics education, data science, machine learning, and the ongoing development of my understanding in the field of mathematics. Following the completion of my Bachelor of Science in Mathematics, I plan to pursue graduate studies to further specialize in my field. 
 
 ## Information Architecture
 
@@ -41,9 +43,6 @@ advanced-analysis/
 ```
 
 ---
-
-## Introduction
-My name is Erin Plaster, and I am currently an undergraduate mathematics student at Texas A&M University - Central Texas. My main interests lie in mathematics education, data science, machine learning, and the ongoing development of my understanding in the field of mathematics. Following the completion of my Bachelor of Science in Mathematics, I plan to pursue graduate studies to further specialize in my field. 
 
 ## Capstone Project Overview
 The two sections submitted for the capstone project illustrate my understanding of mathematical concepts that relate to analytical calculus and data visualization. Project A, focuses on Riemann sums and Riemann integration, an analytical discussion central to calculus and foundational to my mathematics education. Project B explores both an image classifier application using a Shiny application in R and a linear regression model for predicting fuel consumption. These projects demonstrate my theoretical understanding of calculus as well as the mathematical skills required for machine learning. Through this work, I have developed strong problem solving skills and have learned to adapt when difficult questions or scenarios arise, whether working independently or in a collaborative environment. Moreover, I have found that I am deeply interested in how mathematics and machine learning intersect, and look forward to continuing to developing these skills.
