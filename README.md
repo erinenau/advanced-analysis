@@ -20,15 +20,15 @@ advanced-analysis/
 │   └── Proj_7.png
 └── capstone-project/                              # Capstone project deliverables
     ├── mathematical-modeling/                     # Riemann sums and integration analysis
-    │   ├── Project_8_Mathematical_Modeling.pdf   # Capstone project report
-    │   └── Classification_Model/                 # Image classification Shiny app
-    │       ├── app.R                             # Vehicle classification application
-    │       └── www/                              # Web assets
-    │           ├── armored/                      # Armored vehicle sample images
-    │           └── nonarmored/                   # Non-armored vehicle sample images
+    │   └── Project_8_Mathematical_Modeling.pdf   # Capstone project report
     ├── data-analysis-and-visualization/           # Fuel consumption and vehicle analysis
     │   ├── Project_8_Data_Analysis_and_Visualization.pdf  # Capstone project report
     │   ├── README.md                             # Project documentation
+    │   ├── Classification_Model/                 # Image classification Shiny app
+    │   │   ├── app.R                             # Vehicle classification application
+    │   │   └── www/                              # Web assets
+    │   │       ├── armored/                      # Armored vehicle sample images
+    │   │       └── nonarmored/                   # Non-armored vehicle sample images
     │   ├── project7/                             # Python analysis implementation
     │   │   ├── convoy_data_clean.csv            # Vehicle and fuel consumption data
     │   │   ├── project7_python.ipynb            # Python analysis notebooks
@@ -70,5 +70,5 @@ The goal of this project is to provide junior officers at III Corps with tools t
 ![Classifier Predition - Armored Vehicle](images/Project7_2.png)
 ![Classifier Prediction - Non-armored Vehicle](images/Project7_3.png)
 
-## Certificate of Completion - LinkedIn Learning course Machine Learning Foundations: Calculus
+## Certificate of Completion - Linkedin Learning course Machine Learning Foundations: Calculus
 ![alt text](images/IMG_3887.jpeg)
