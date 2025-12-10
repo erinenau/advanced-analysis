@@ -63,7 +63,8 @@ The goal of this project is to provide junior officers at III Corps with tools t
 
 ## Links for the Data Analysis and Visualization Models
 
-[Classification Model](https://erin-plaster.shinyapps.io/Classification_Model/)
+ [Classification Model](https://erin-plaster.shinyapps.io/Classification_Model/)  
+
 [Regression Model](https://erin-plaster.shinyapps.io/Regression_App/)
 
 
