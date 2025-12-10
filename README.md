@@ -7,28 +7,37 @@ Erin Plaster
 
 ```
 advanced-analysis/
-├── README.md                          # Project overview and navigation guide
-├── data/                              # Datasets used in analysis
-│   └── synthetic-data.csv
-├── images/                            # Project visualizations and figures
-├── notebooks/                         # Jupyter notebooks for analysis
-│   └── placeholder.ipynb
-├── project7/                          # Mathematical modeling project (Riemann sums)
-│   ├── convoy_data_clean.csv
-│   ├── project7_python.ipynb         # Python implementation and analysis
-│   └── README.md                     # Project-specific documentation
-├── reports/                           # Generated analysis reports
-├── rstudio/                           # R Shiny applications
-│   ├── Classification_Model/          # Image classification (armored vs non-armored)
-│   │   ├── app.R                     # Shiny app for vehicle classification
-│   │   └── www/                      # Web assets
-│   │       ├── armored/              # Sample armored vehicle images
-│   │       │   ├── arm1.avif
-│   │       │   └── arm11.avif
-│   │       └── nonarmored/           # Sample non-armored vehicle images
-│   └── Regression_App/                # Fuel consumption prediction model
-│       ├── app.R                     # Shiny app for regression predictions
-│       └── convoy_data_clean.csv     # Vehicle and fuel data
+├── README.md                                      # Project overview and navigation guide
+├── images/                                        # Project visualizations and figures
+│   ├── IMG_3887.jpeg
+│   ├── Proj5_1.png
+│   ├── Proj5_2.png
+│   ├── Project7_1.png
+│   ├── Project7_2.png
+│   ├── Project7_3.png
+│   ├── Project7_7.png
+│   ├── Project7_8.png
+│   └── Proj_7.png
+└── capstone-project/                              # Capstone project deliverables
+    ├── mathematical-modeling/                     # Riemann sums and integration analysis
+    │   ├── Project_8_Mathematical_Modeling.pdf   # Capstone project report
+    │   └── Classification_Model/                 # Image classification Shiny app
+    │       ├── app.R                             # Vehicle classification application
+    │       └── www/                              # Web assets
+    │           ├── armored/                      # Armored vehicle sample images
+    │           └── nonarmored/                   # Non-armored vehicle sample images
+    ├── data-analysis-and-visualization/           # Fuel consumption and vehicle analysis
+    │   ├── Project_8_Data_Analysis_and_Visualization.pdf  # Capstone project report
+    │   ├── README.md                             # Project documentation
+    │   ├── project7/                             # Python analysis implementation
+    │   │   ├── convoy_data_clean.csv            # Vehicle and fuel consumption data
+    │   │   ├── project7_python.ipynb            # Python analysis notebooks
+    │   │   └── README.md                        # Analysis documentation
+    │   └── Regression_App/                       # Fuel consumption prediction Shiny app
+    │       ├── app.R                             # Regression prediction application
+    │       └── convoy_data_clean.csv            # Vehicle data for predictions
+    └── reflection/                                # Project reflection and analysis
+        └── Project_8_Reflection.pdf              # Capstone reflection document
 ```
 
 ---
