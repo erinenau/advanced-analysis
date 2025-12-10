@@ -5,7 +5,7 @@ account: erin-plaster
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 16287860
-bundleId: 11304371
+bundleId: 11304429
 url: https://erin-plaster.shinyapps.io/Classification_Model/
 version: 1
 asMultiple: FALSE
