@@ -7,25 +7,55 @@ library(base64enc)
 # Function to extract simple features from an image
 ## ------------------------------------------------------------------
 extract_features <- function(img_path) {
-  img <- image_read(img_path)
-  
-  # Resize to standard size for consistency
-  img <- image_resize(img, "100x100!")
-  
-  # Get image data as array
-  img_array <- as.integer(image_data(img, channels = "rgb"))
-  
-  # Extract features: mean RGB values, standard deviation
-  features <- c(
-    mean_r = mean(img_array[1,,]),
-    mean_g = mean(img_array[2,,]),
-    mean_b = mean(img_array[3,,]),
-    sd_r = sd(img_array[1,,]),
-    sd_g = sd(img_array[2,,]),
-    sd_b = sd(img_array[3,,])
-  )
-  
-  return(features)
+  tryCatch({
+    img <- image_read(img_path)
+    
+    # Resize to standard size for consistency
+    img <- image_resize(img, "100x100!")
+    
+    # Get image data as array
+    img_array <- as.integer(image_data(img, channels = "rgb"))
+    
+    # Extract features: mean RGB values, standard deviation
+    features <- c(
+      mean_r = mean(img_array[1,,]),
+      mean_g = mean(img_array[2,,]),
+      mean_b = mean(img_array[3,,]),
+      sd_r = sd(img_array[1,,]),
+      sd_g = sd(img_array[2,,]),
+      sd_b = sd(img_array[3,,])
+    )
+    
+    return(features)
+  }, error = function(e) {
+    # If image has corrupted metadata, try to strip it
+    warning(paste("Warning: Issue reading", img_path, "- attempting to recover..."))
+    tryCatch({
+      # Try reading with strip = TRUE to remove metadata
+      img <- image_read(img_path)
+      img <- image_strip(img)  # Remove all profiles
+      
+      # Resize to standard size for consistency
+      img <- image_resize(img, "100x100!")
+      
+      # Get image data as array
+      img_array <- as.integer(image_data(img, channels = "rgb"))
+      
+      # Extract features: mean RGB values, standard deviation
+      features <- c(
+        mean_r = mean(img_array[1,,]),
+        mean_g = mean(img_array[2,,]),
+        mean_b = mean(img_array[3,,]),
+        sd_r = sd(img_array[1,,]),
+        sd_g = sd(img_array[2,,]),
+        sd_b = sd(img_array[3,,])
+      )
+      
+      return(features)
+    }, error = function(e2) {
+      stop(paste("Could not process image", img_path, "even after removing metadata. Error:", e2$message))
+    })
+  })
 }
 
 ## ------------------------------------------------------------------
@@ -261,9 +291,18 @@ server <- function(input, output, session) {
         stop("No training images found in armored or non-armored sets.")
       }
       
-      # Extract features from all images
-      armored_features    <- t(sapply(armored_paths,    extract_features))
-      nonarmored_features <- t(sapply(nonarmored_paths, extract_features))
+      # Extract features from all images with specific error handling
+      armored_features <- tryCatch({
+        t(sapply(armored_paths, extract_features))
+      }, error = function(e) {
+        stop(paste("Error processing armored images:", e$message))
+      })
+      
+      nonarmored_features <- tryCatch({
+        t(sapply(nonarmored_paths, extract_features))
+      }, error = function(e) {
+        stop(paste("Error processing non-armored images:", e$message))
+      })
       
       # Create labels
       armored_labels    <- rep("Armored",     nrow(armored_features))
