@@ -24,3 +24,5 @@ The goal of this project is to provide junior officers at III Corps with tools t
 
 ## Selected Visualizations
 
+Insert an image by linking to it or using relative pathing. For example:
+![Alt text](images\IMG_2984.jpeg)
