@@ -2,9 +2,6 @@
 Erin Plaster
 12-07-2025
 
----
-#TOC
----
 
 ## Information Architecture
 
@@ -49,6 +46,9 @@ The purpose of this project is to discuss Riemann sums and show how they can be 
 https://www.geogebra.org/m/xhp3sqnt
 
 ## Selected Visualizations
+![Upper & Lower Riemann Sums](images/Proj5_1.png)
+![Riemann Sums Converging](images/Proj5_2.png)
+
 
 ## Data Analysis and Visualization Project
 The goal of this project is to provide junior officers at III Corps with tools that can support situational awareness in the field and tools to assist in predicting logistic needs. This study demonstrates how two different datasets can be transformed through preprocessing, explanatory data analysis, visualization, and predictive modeling to prepare officers for missions. The first analysis develops a Random Forest classifier that distinguishes armored from non-armored vehicles using color based image features. The Shiny web application demonstrates how machine learning can assist in asset detection through the use of image classification, visualization of the model training, and a short (user appropriate) description of gradient descent. The second analysis builds a multivariate linear regression model to predict fuel consumption based on vehicle weight, speed, and distance traveled. The project includes both a Shiny web application and Python code that accepts user input to predict fuel consumption. These models illustrate how automated decision systems could work together to support III Corps.
@@ -56,10 +56,10 @@ The goal of this project is to provide junior officers at III Corps with tools t
 ## Link to the Data Analysis and Visualization Project
 
 ## Selected Visualizations
+![Classification App - UI](images/Proj_7.png)
+![Classification App - Training Status Page](images/Project7_1.png)
+![Classifier Predition - Armored Vehicle](images/Project7_2.png)
+![Classifier Prediction - Non-armored Vehicle](images/Project7_3.png)
 
-Insert an image by linking to it or using relative pathing. For example:
-![Alt text](images\IMG_2984.jpeg)
-
-##
-List of figures
-1. Figure 1: Riemann Sum Visualization Applet
+## Certificate of Completion - LinkedIn Learning course Machine Learning Foundations: Calculus
+![alt text](images/IMG_3887.jpeg)
