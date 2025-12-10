@@ -3,17 +3,50 @@ Erin Plaster
 12-07-2025
 
 ---
+#TOC
+---
+
+## Information Architecture
+
+```
+advanced-analysis/
+├── README.md
+├── data/
+│   └── synthetic-data.csv
+├── images/
+├── notebooks/
+│   └── placeholder.ipynb
+├── project7/
+│   ├── convoy_data_clean.csv
+│   ├── project7_python.ipynb
+│   └── README.md
+├── reports/
+├── rstudio/
+│   ├── Classification_Model/
+│   │   ├── app.R
+│   │   └── www/
+│   │       ├── armored/
+│   │       │   ├── arm1.avif
+│   │       │   └── arm11.avif
+│   │       └── nonarmored/
+│   └── Regression_App/
+│       ├── app.R
+│       └── convoy_data_clean.csv
+```
+
+---
 
 ## Introduction
 My name is Erin Plaster, and I am currently an undergraduate mathematics student at Texas A&M University - Central Texas. My main interests lie in mathematics education, data science, machine learning, and the ongoing development of my understanding in the field of mathematics. Following the completion of my Bachelor of Science in Mathematics, I plan to pursue graduate studies to further specialize in my field. 
 
 ## Capstone Project Overview
-The two sections submitted for the capstone project illustrate my understanding of mathematical concepts that relate to analytical calculus and data visualization. Project A, concentrating on Riemann sums and Riemann integration, is an analytical discussion central to calculus and is foundational to my mathematics education. Project B concentrates on both an image classifier application using a Shiny web application in R and a linear regression model for predicting fuel consumption. These projects show a theoretical understanding of calculus and the mathematics required for machine learning. Through this work, I have learned problem solving skills and pivot when necessary to find solutions to difficult questions or scenarios, whether working on my own or in a collaborative environment. Moreover, I have found that I am deeply interested in how mathematics and machine learning intersect, and look forward to developing these skills further. 
+The two sections submitted for the capstone project illustrate my understanding of mathematical concepts that relate to analytical calculus and data visualization. Project A, focuses on Riemann sums and Riemann integration, an analytical discussion central to calculus and foundational to my mathematics education. Project B explores both an image classifier application using a Shiny application in R and a linear regression model for predicting fuel consumption. These projects demonstrate my theoretical understanding of calculus as well as the mathematical skills required for machine learning. Through this work, I have developed strong problem solving skills and have learned to adapt when difficult questions or scenarios arise, whether working independently or in a collaborative environment. Moreover, I have found that I am deeply interested in how mathematics and machine learning intersect, and look forward to continuing to developing these skills.
 
 ## Mathematical Modeling Project 
 The purpose of this project is to discuss Riemann sums and show how they can be used to approximate areas, including what conditions must be present for a function to be Riemann integrable. More specifically, the project will look closely at the convergence of upper and lower sums for a continuous function on a closed interval and discuss how integrability is affected when discontinuities or unbounded behavior are present. The project includes a GeoGebra applet to visualize Riemann integration that allows the user to adjust the number of partitions and determine whether a function is Riemann integrable on an interval.
 
 ## Link to the Mathematical Modeling Project
+https://www.geogebra.org/m/xhp3sqnt
 
 ## Selected Visualizations
 
@@ -26,3 +59,7 @@ The goal of this project is to provide junior officers at III Corps with tools t
 
 Insert an image by linking to it or using relative pathing. For example:
 ![Alt text](images\IMG_2984.jpeg)
+
+##
+List of figures
+1. Figure 1: Riemann Sum Visualization Applet
